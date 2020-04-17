@@ -1,5 +1,20 @@
+body {
+    background-color: rgba(rgba(255, 254, 254, 0.87), green, blue, alpha);
+}
+
 .container {
-    background-color: aquamarine;
-    display: flex-flow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.container-list {
     align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.todo-list {
+    width: 200px;
+    height: 200px;
 }

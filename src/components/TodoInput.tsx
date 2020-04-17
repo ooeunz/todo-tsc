@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './TodoInput.css';
 
 interface TodoInputProps {
     onCreate: (data: string) => void;
@@ -18,8 +19,14 @@ const TodoInput: React.FC<TodoInputProps> = ({ onCreate }) => {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <input name="content" onChange={handleChange} />
-                <button type="submit">제출 해보자</button>
+                <input
+                    className="input-box"
+                    name="content"
+                    onChange={handleChange}
+                />
+                <button className="btn" type="submit">
+                    제출 해보자
+                </button>
             </form>
         </div>
     );

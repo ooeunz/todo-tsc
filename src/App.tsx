@@ -29,13 +29,18 @@ function App() {
         <Fragment>
             <div className="container">
                 <TodoInput onCreate={handleCreate} />
-                <div id="ready">
-                    <h1>미완료</h1>
-                    <TodoList todos={todos} onComplete={handleComplete} />
-                </div>
-                <div id="complete">
-                    <h1>완료</h1>
-                    <TodoList todos={complete} onComplete={handleComplete} />
+                <div className="container-list">
+                    <div id="ready">
+                        <h1>미완료</h1>
+                        <TodoList todos={todos} onComplete={handleComplete} />
+                    </div>
+                    <div id="complete">
+                        <h1>완료</h1>
+                        <TodoList
+                            todos={complete}
+                            onComplete={handleComplete}
+                        />
+                    </div>
                 </div>
             </div>
         </Fragment>
